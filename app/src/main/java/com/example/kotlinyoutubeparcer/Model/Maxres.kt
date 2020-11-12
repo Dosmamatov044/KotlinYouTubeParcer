@@ -5,9 +5,9 @@ import com.google.gson.annotations.SerializedName
 
 data class Maxres(
     @SerializedName("height")
-    val height: Int,
+    val height: Int?=null,
     @SerializedName("url")
-    val url: String,
+    val url: String?=null,
     @SerializedName("width")
-    val width: Int
+    val width: Int?=null
 )

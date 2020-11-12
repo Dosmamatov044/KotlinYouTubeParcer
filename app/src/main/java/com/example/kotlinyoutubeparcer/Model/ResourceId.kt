@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 
 data class ResourceId(
     @SerializedName("kind")
-    val kind: String,
+    val kind: String?=null,
     @SerializedName("videoId")
-    val videoId: String
+    val videoId: String?=null
 )

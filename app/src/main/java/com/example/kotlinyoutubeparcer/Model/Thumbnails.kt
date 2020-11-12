@@ -6,13 +6,13 @@ import com.google.gson.annotations.SerializedName
 
 data class Thumbnails(
     @SerializedName("default")
-    val default: Default,
+    val default: Default?=null,
     @SerializedName("high")
-    val high: High,
+    val high: High?=null,
     @SerializedName("maxres")
-    val maxres: Maxres,
+    val maxres: Maxres?=null,
     @SerializedName("medium")
-    val medium: Medium,
+    val medium: Medium?=null,
     @SerializedName("standard")
-    val standard: Standard
+    val standard: Standard?=null
 )
